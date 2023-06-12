@@ -54,22 +54,36 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="order.html">Custom Order</a>
+                        <a class="nav-link active" href="order.html">Custom Order</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-    <section id="contact">
+    <script>
+        // github: omar-bakhsh
+        // alert("send_msg_to_unknowing_number")
+
+        function send_handle() {
+
+            let num = document.getElementById("number").value;
+            let message = document.getElementById("message").value;
+            let name = document.getElementById("name").value;
+
+            var win = window.open(`https://wa.me/${num}?text=Hello%20I%27am%20${name},%0a${message}`, '_blank');
+            // win.focus();
+        }
+    </script>
+    <section id="order">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-8 offset-2">
                     <div class="row mb-3">
                         <div class="col align-self-center">
                             <div class="mx-auto d-block text-center text-primary">
@@ -80,32 +94,41 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="row">
+                    <div class="row mb-3">
+                        <input type="hidden" name="" id="number" value="6282214023911">
                         <div class="col">
-                            <strong style="font-family: 'Crimson Text', serif;">
-                                Call/Whatsapp :
-                            </strong>
-                            <p>
-                                087832657197 (Udin)
-                            </p>
-                            <br>
-                            <br>
-                            <strong style="font-family: 'Crimson Text', serif;">Instagram : </strong>
-                            <p>@dyra_bouquet</p>
-                            <strong style="font-family: 'Crimson Text', serif;">Facebook : </strong>
-                            <p>Dyra Bouquet</p>
-                            <br>
-                            <br>
-                            <strong style="font-family: 'Crimson Text', serif;">
-                                Store :
-                            </strong>
-                            <p>
-                                Jl. Candrawijaya No.3, Dusun II, Beji, Kec. Baturaden, Kabupaten Banyumas, Jawa Tengah 53126
-                            </p>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="name">
+                                <label for="name">Your Name</label>
+                            </div>
                         </div>
                         <div class="col">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.618199217547!2d109.23125745503066!3d-7.396606577947114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655ffcc8a6b707%3A0x86c82a5869fad822!2sDyra%20Bouquet!5e0!3m2!1sid!2sid!4v1686300739039!5m2!1sid!2sid"
-                                width="700" height="375" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Email" id="email">
+                                <label for="email">Your Email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" placeholder="Your Phone" aria-label="Your Phone" id="phone">
+                                <label for="phone">Your Phone</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 130px"></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mt-3">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" onclick="send_handle()" style="font-family: 'Crimson Text', serif;">Send Message</button>
                         </div>
                     </div>
                 </div>

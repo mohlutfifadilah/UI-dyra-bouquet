@@ -1,111 +1,222 @@
-html {
-    padding: 0;
-}
-
-.brand-centered {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-}
-
-.navbar-brand {
-    display: flex;
-    align-items: center;
-}
-
-
-/*demo styling only*/
-
-.navbar-brand {
-    padding: 0px;
-    /* remove bootstrap padding on floated image containers -  */
-}
-
-.navbar-brand>img {
-    height: 100%;
-    width: auto;
-    padding: 7px 14px 7px 0;
-    /* padding for image ... text needs no padding */
-}
-
-.navbar-toggle {
-    z-index: 1;
-}
-
-.nav-item {
-    margin: 0 20px;
-}
-
-.card {
-    width: 100%;
-    height: 300px;
-    color: #D6D600;
-}
-
-.card-img {
-    width: 100%;
-    height: 100%;
-    /* background-color: black; */
-    /* fallback color */
-    background-position: center;
-    background-size: cover;
-    transition: all 0.3s ease-in-out;
-    opacity: 1;
-    -webkit-filter: brightness(100%);
-}
-
-.card:hover .card-img,
-.card:focus .card-img {
-    transform: scale(1.02);
-    opacity: 1;
-    -webkit-filter: brightness(70%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-.card:hover .card-img-overlay {
-    color: #730d0d;
-}
-
-.card-img-overlay>h4,
-.card-img-overlay>p {
-    visibility: hidden;
-}
-
-.card-img-overlay:hover h4,
-.card-img-overlay:hover p {
-    visibility: visible;
-}
-
-.card:hover .card-img-overlay p {
-    font-size: 1.5em;
-    letter-spacing: 0.02em;
-}
-
-.fa-facebook,
-.fa-whatsapp,
-.fa-instagram {
-    border-radius: 50%;
-    padding: 4px;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-whatsapp {
-    background: #4bec60;
-    color: white;
-}
-
-.fa-instagram {
-    background: #a12e71;
-    color: white;
-}
+            @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+            @import url('https://fonts.cdnfonts.com/css/nabila-stevanie');
+            html {
+                padding: 0;
+            }
+            
+            h1 {
+                font-family: 'Nabila Stevanie', sans-serif;
+                line-height: 70px;
+                font-size: 40px;
+            }
+            
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            small {
+                font-family: 'Crimson Text', serif;
+            }
+            
+            .btn-primary {
+                background-color: #503417;
+                border: none;
+            }
+            
+            .btn-primary:hover,
+            .btn-primary:active,
+            .btn-primary:visited {
+                font-family: 'Crimson Text', serif;
+                background-color: #503417 !important;
+                border: none;
+            }
+            
+            .text-primary,
+            .text-primary:hover,
+            .text-primary:active,
+            .text-primary:visited {
+                font-family: 'Crimson Text', serif;
+                color: #503417 !important;
+                border: none;
+            }
+            
+            footer li.nav-item,
+            footer li.nav-item:hover,
+            footer li.nav-item:active,
+            footer li.nav-item:visited {
+                font-family: 'Crimson Text', serif;
+                color: white !important;
+                border: none;
+                font-size: 18px;
+            }
+            
+            .dropdown a.dropdown-item,
+            .dropdown a.dropdown-item:hover,
+            .dropdown a.dropdown-item:active,
+            .dropdown a.dropdown-item:visited {
+                font-family: 'Crimson Text', serif;
+                color: #503417 !important;
+                border: none;
+                background-color: none;
+            }
+            
+            .bg-primary,
+            .bg-primary:hover,
+            .bg-primary:active,
+            .bg-primary:visited {
+                background-color: #503417 !important;
+                opacity: 0.7;
+            }
+            
+            .brand-centered {
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 0;
+            }
+            
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+            }
+            
+            li.nav-item a {
+                font-family: 'Crimson Text', serif;
+                color: rgb(158, 153, 153);
+            }
+            
+            li.nav-item a:hover,
+            li.nav-item a:active,
+            li.nav-item a:focus {
+                color: #503417;
+            }
+            
+            li.nav-item a.active {
+                color: #503417;
+            }
+            /*demo styling only*/
+            
+            .navbar-brand {
+                padding: 0px;
+                /* remove bootstrap padding on floated image containers -  */
+            }
+            
+            .navbar-brand>img {
+                height: 100%;
+                width: auto;
+                padding: 7px 14px 7px 0;
+                /* padding for image ... text needs no padding */
+            }
+            
+            .navbar-toggle {
+                z-index: 1;
+            }
+            
+            .nav-item {
+                margin: 0 20px;
+            }
+            
+            .card {
+                width: 100%;
+                height: 300px;
+                color: #D6D600;
+            }
+            
+            .card-img {
+                width: 100%;
+                height: 100%;
+                /* background-color: black; */
+                /* fallback color */
+                background-position: center;
+                background-size: cover;
+                transition: all 0.3s ease-in-out;
+                opacity: 1;
+                -webkit-filter: brightness(100%);
+            }
+            
+            .card:hover .card-img,
+            .card:focus .card-img {
+                transform: scale(1.02);
+                opacity: 1;
+                -webkit-filter: brightness(70%);
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                transition: all 1s ease;
+            }
+            
+            .card:hover .card-img-overlay {
+                color: #730d0d;
+            }
+            
+            .card-img-overlay>h4,
+            .card-img-overlay>p {
+                visibility: hidden;
+            }
+            
+            .card-img-overlay:hover h4,
+            .card-img-overlay:hover p {
+                visibility: visible;
+            }
+            
+            .card:hover .card-img-overlay p {
+                font-size: 1.5em;
+                letter-spacing: 0.02em;
+                font-family: 'Crimson Text', serif;
+            }
+            
+            .fa-facebook,
+            .fa-whatsapp,
+            .fa-instagram {
+                border-radius: 50%;
+                padding: 4px;
+            }
+            
+            .fa-facebook {
+                background: #3B5998;
+                color: white;
+            }
+            
+            .fa-whatsapp {
+                background: #4bec60;
+                color: white;
+            }
+            
+            .fa-instagram {
+                background: #a12e71;
+                color: white;
+            }
+            
+            section {
+                margin: 50px 0;
+            }
+            
+            section#logo {
+                margin: 0;
+            }
+            
+            section#navbar {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            
+            section#main {
+                margin-top: 0;
+            }
+            
+            section#order {
+                margin-top: 29px;
+            }
+            
+            section#about {
+                margin-top: 29px;
+            }
+            
+            section#contact {
+                margin-top: 29px;
+            }
