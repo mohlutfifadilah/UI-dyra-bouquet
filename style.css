@@ -53,13 +53,16 @@
             }
             
             .dropdown a.dropdown-item,
-            .dropdown a.dropdown-item:hover,
             .dropdown a.dropdown-item:active,
             .dropdown a.dropdown-item:visited {
                 font-family: 'Crimson Text', serif;
                 color: #503417 !important;
                 border: none;
-                background-color: none;
+                background: none;
+            }
+            
+            .dropdown a.dropdown-item:hover {
+                background: #d3d4d7;
             }
             
             .bg-primary,
@@ -89,14 +92,20 @@
                 color: rgb(158, 153, 153);
             }
             
-            li.nav-item a:hover,
             li.nav-item a:active,
             li.nav-item a:focus {
                 color: #503417;
             }
             
+            li.nav-item a:hover {
+                background: #d3d4d7;
+                color: #503417;
+            }
+            
             li.nav-item a.active {
                 color: #503417;
+                background-color: none;
+                background: none;
             }
             /*demo styling only*/
             
